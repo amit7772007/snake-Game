@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="game-container">
+  <h1>🐍 Snake Game</h1>
+
+  <div class="score-board">
+    Score: <b id="score">0</b>
+  </div>
+
+  <canvas id="gameCanvas"></canvas>
+
+  <div class="controls">
+    <button onclick="startGame()">Start</button>
+    <button onclick="pauseGame()">Pause</button>
+    <button onclick="resetGame()">Restart</button>
+  </div>
+
+  <!-- MOBILE CONTROLS -->
+  <div class="mobile-controls">
+    <button onclick="setDirection('UP')">⬆</button>
+    <div>
+      <button onclick="setDirection('LEFT')">⬅</button>
+      <button onclick="setDirection('DOWN')">⬇</button>
+      <button onclick="setDirection('RIGHT')">➡</button>
+    </div>
+  </div>
+
+  <!-- PLAYER NAME -->
+  <input
+    type="text"
+    id="playerName"
+    class="name-input"
+    placeholder="Enter your name"
+    maxlength="12"
+  >
+
+  <!-- GLOBAL LEADERBOARD -->
+  <div class="leaderboard">
+    <h3>🌍 Global Leaderboard</h3>
+    <ol id="leaderboardList"></ol>
+  </div>
+
+  <footer class="credits">
+    <span>Founder — <b>Amit Sao</b></span>
+    <span>Co-Founder — <b>Mohammad Kaif Ansari</b></span>
+  </footer>
+</div>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>

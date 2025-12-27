@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.game-container {
+  background: #111;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+  width: 95%;
+  max-width: 420px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 8px;
+}
+
+.score-board {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+canvas {
+  width: 100%;
+  background: #000;
+  border: 3px solid #00ff88;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px;
+  background: #00ff88;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.mobile-controls {
+  margin-top: 10px;
+}
+
+.mobile-controls button {
+  width: 60px;
+  height: 45px;
+  font-size: 20px;
+  margin: 4px;
+}
+
+.name-input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
+  border-radius: 6px;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+.leaderboard {
+  margin-top: 10px;
+  background: rgba(255,255,255,0.06);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.leaderboard h3 {
+  color: #00ff88;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.leaderboard li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin: 3px 0;
+}
+
+.credits {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+.credits b {
+  color: #00ff88;
+}
